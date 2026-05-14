@@ -1,0 +1,63 @@
+{
+  "name": "@eucomplyhub/mcp-eu-ai-act",
+  "version": "0.1.0",
+  "description": "MCP server for EU AI Act compliance — Annex III deep classifier + multi-jurisdiction risk classifier. Powers AI assistants (Claude Desktop, Cursor, Windsurf) to evaluate mid-market SaaS systems against EU AI Act, NIST AI RMF, ISO/IEC 42001, OECD, and more frameworks.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "eu-ai-act",
+    "annex-iii",
+    "ai-governance",
+    "compliance",
+    "audit",
+    "iso-42001",
+    "nist-ai-rmf",
+    "gdpr",
+    "ai-act-classifier"
+  ],
+  "author": {
+    "name": "Piotr Reder",
+    "email": "piotr@eucomplyhub.com",
+    "url": "https://eucomplyhub.com"
+  },
+  "license": "MIT",
+  "homepage": "https://eucomplyhub.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eucomplyhub/mcp-eu-ai-act.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eucomplyhub/mcp-eu-ai-act/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-eu-ai-act": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

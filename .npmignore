@@ -1,0 +1,11 @@
+src
+tsconfig.json
+.gitignore
+node_modules
+.env
+.env.local
+*.log
+.vscode
+.idea
+examples/screenshots
+.npmrc
